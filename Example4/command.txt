@@ -1,0 +1,8 @@
+# generate 3d.png
+./DiffDen.py job7.fchk job8_no.fchk -j 0.05 -x "-4.0 4.0 0.03" -y "-6.0 6.0 0.03"  --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 0.0 1.0" -d True
+
+# generate heatmap.png
+./DiffDen.py job7.fchk job8_no.fchk -j 0.05 -x "-4.0 4.0 0.03" -y "-6.0 6.0 0.03"  --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 0.0 1.0" --load True --heatmap True
+
+# generate contours.png
+./DiffDen.py job7.fchk job8_no.fchk -j 0.05 -x "-4.0 4.0 0.03" -y "-6.0 6.0 0.03"  --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 0.0 1.0" --load True -l 20 -n "20 20"

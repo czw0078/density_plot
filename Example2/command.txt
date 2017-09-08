@@ -1,0 +1,8 @@
+# generate 3d.png
+./DiffDen.py job4_mp2.molden job3_hf.molden -j 0.025 -x "-4.0 4.0 0.03" -y "-4.0 4.0 0.03" --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 1.0 0.0" -d True
+
+# generate heatmap.png
+./DiffDen.py job4_mp2.molden job3_hf.molden -j 0.025 -x "-4.0 4.0 0.03" -y "-4.0 4.0 0.03" --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 1.0 0.0" --load True --heatmap True
+
+# generate contours.png
+./DiffDen.py job4_mp2.molden job3_hf.molden -j 0.025 -x "-4.0 4.0 0.03" -y "-4.0 4.0 0.03" --p1 "0.0 0.0 0.0" --p2 "1.0 0.0 0.0" --p3 "0.0 1.0 0.0" --load True -l 20 -n "10 10"
