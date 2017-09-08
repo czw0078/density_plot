@@ -2,7 +2,7 @@
 An electron density difference calculation from orbital functions and visualization by Python Matplot for computational chemistry
 
 ## Gallery:
-See results: http://www.auburn.edu/~czw0078/intr.php 
+See results: http://www.auburn.edu/~czw0078/dens.php 
 
 ## Quick start:
 1. CD to the Example1
